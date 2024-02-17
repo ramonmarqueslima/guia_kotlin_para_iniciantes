@@ -1,34 +1,103 @@
 <!DOCTYPE html>
+<!-- Idioma usado no site -->
 <html lang="pt">
+<!--  Cabeçalho onde estão inserido algumas configurações e informações do site -->
 <head>
+    <!-- Padrão para reconhecimento de caracteres do portugues -->
     <meta charset="UTF-8">
-    <title>Guia Kotlin para Iniciantes</title>
+    <!-- Nome do site na guia do navegador -->
+    <title>Kotlin para Iniciantes</title>
+    <!-- Icone do site na guia do navegador -->
+    <link rel="shortcut icon" href="assets/favicon.ico" type="image/x-icon">
+    <!-- Estilização do site, cores, tamanho, fontes etc. -->
     <link rel="stylesheet" href="./style.css">
-    <link rel="preconnect" href="https://fonts.googleapis.com">
-    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
+    <!-- Fontes textuais usada para aplicar no estilo do site -->
+    <link rel="preconnect" href="https:fonts.googleapis.com">
+    <link rel="preconnect" href="https:fonts.gstatic.com" crossorigin>
+    <link href="https:fonts.googleapis.com/css2?family=Open+Sans:ital,wght@0,300..800;1,300..800&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
 </head>
+<!-- Area onde é apresentado todo o conteudo do site -->
 <body>
-    <div class="title-page-curse">
+
+     <!-- titulo do site -->
+    <header class="header-page">
         <h1 class="title-page">kotlin para iniciantes</h1>
-        <h3 class="description-page">guia de estudos para a linguagem kotlin.</h3>
-    </div>
-    <div class="sumary-curse">
-        <div class="sumary-section">
-            <h3>sumario</h3>
-            <ol class="sumary-list">
-                <li><a href="#">sumario</a></li>
-                <li><a href="#inicio">inicio</a></li>
-                <li><a href="#olamundo">olá mundo</a></li>
-                <li><a href="#variaveis">variaveis</a></li>
-                <li><a href="#mapa">mapa do site</a></li>
-            </ol>
+    </header>
+
+
+<!-- Modelo base para criar um modulo -->
+ <!-- Espaço em volta das seções onde é aplicado a distancia entre os modulos. -->
+    <!-- <h1 class="area-module">
+        Cabeçalho do modulo do curso
+        <div class="section-header">
+            Logo kotlin a lado esquerdo do titulo do modulo do curso
+            <img src="./assets/Kotlin Full Color Logo Mark RGB.svg" class="side-logo">
+            Titulo do modulo
+            <h3 class="section-title">module name</h3>
         </div>
+        Conteudo do modulo
+        <div class="module-content">
+            Titulo do conteudo abordado
+            <h3 class="content-curse-title">title content</h3>
+            Conteudo do modulo abordado
+            <p class="content-curse">
+                content here!
+            </p>
+            fonte de ferencia das informações
+            <div class="font-section">
+                <p class="fonte-reference">fonte</p>
+                <a href="https://" target="_blank" class="fonte-name">name</a>
+            </div>
+        </div>
+    </h1> -->
+
+
+    <!-- Espaço em volta das seções onde é aplicado a distancia entre os modulos. -->
+    <h1 class="area-module">
+        <!-- Cabeçalho do modulo do curso-->
+        <div class="section-header">
+            <!-- Logo kotlin a lado esquerdo do titulo do modulo do curso -->
+            <img src="./assets/Kotlin Full Color Logo Mark RGB.svg" class="side-logo">
+            <!-- Titulo do modulo -->
+            <h3 class="section-title">historia</h3>
+        </div>
+        <!-- Conteudo do modulo -->
+        <div class="module-content">
+            <!-- Titulo do conteudo abordado -->
+            <h3 class="content-curse-title">introdução ao kotlin</h3>
+            <!-- Conteudo do modulo abordado -->
+            <p class="content-curse">
+                Kotlin é uma linguagem de programação moderna, lançada oficialmente pela JetBrains em 2011. O Kotlin 1.0, lançado em 15 de fevereiro de 2016, é reconhecido como a primeira versão estável. A partir desta versão, a JetBrains comprometeu-se com a retrocompatibilidade a longo prazo. O Kotlin foi projetado para superar algumas das desvantagens do Java, como verbosidade e exceções de ponteiro nulo. Os criadores do Kotlin tinham como objetivo desenvolver uma linguagem que pudesse utilizar frameworks e bibliotecas Java existentes, oferecendo uma sintaxe mais expressiva e nítida.
+                Kotlin se vê como uma linguagem pragmática, fornecendo soluções para desafios comuns de programação. É totalmente interoperável com Java, o que significa que ele pode usar todas as bibliotecas, estruturas e ferramentas Java existentes. Além disso, você pode chamar o código Kotlin do Java e vice-versa.
+           </p>
+            <!-- fonte de ferencia das informações -->
+            <div class="font-section">
+                <p class="fonte-reference">fonte</p>
+                <a href="https://hyperskill.org/" target="_blank" class="fonte-name">hyperskill</a>
+            </div>
+        </div>
+    </h1>
+
+    <!--  Area dedicada aos cards que mostram os cursos -->
+    <div class="cards-sections">
+        <!-- Grupo de cards -->
+        <ul class="card-image">
+             <!-- Card individual -->
+            <li>
+                 <!-- Conteudo do Card -->
+                <a href="">
+                    <img src="">
+                    <h3>title</h3>
+                    <p>deciption</p>
+                </a>
+            </li>
+        </ul>
     </div>
-    <div id="inicio"></div>
-        <div class="section-title">
+  
+    <!-- <div id="historia"></div>
+        <div class="section-header">
             <img src="./assets/Kotlin Full Color Logo Mark RGB.svg" class="mini-logo">
-            <h3 class="kotlin-logo-name">inicio</h3>
+            <h3 class="module-title">historia</h3>
         </div>
         <div class="about-koltin">
             <p>Kotlin é uma linguagem de programação moderna e versátil que pode ser aplicada em diversas atividades. Aqui estão algumas delas:</p>
@@ -43,27 +112,28 @@
             <br>
             <p>Em resumo, o Kotlin é uma escolha sólida para desenvolvedores que desejam escrever código de forma concisa, segura e eficiente em várias áreas, incluindo Android, web e desktop! 🚀👩‍💻</p>
         </div>
-    <div class="section-title">
+    <div class="section-header">
         <img src="./assets/Kotlin Full Color Logo Mark RGB.svg" class="mini-logo">
-        <h3 class="kotlin-logo-name" id="olamundo">olá mundo</h3>
+        <h3 class="module-title" id="olamundo">olá mundo</h3>
     </div>
 <pre class="box-code">
 <span class="fun">fun</span> <span class="main">main</span>() {
     println(<span class="println-text">"Hello, world!"</span>)
-    <span class="comment">// Hello, world!</span>
+    <span class="comment"> Hello, world!</span>
 }
 </pre>
 
-<div class="section-title">
+<div class="section-header">
     <img src="./assets/Kotlin Full Color Logo Mark RGB.svg" class="mini-logo">
-    <h3 class="kotlin-logo-name" id="variaveis">variaveis</h3>
-</div>
+    <h3 class="module-title" id="variaveis">variaveis</h3>
+</div> -->
 
+<!-- Parte final do site -->
 <div class="footer-page">
     <div class="menu-curse">
         <div class="kotlin-curse-description">
             <div class="author-name-photo">
-                    <a href="https://www.linkedin.com/in/Ramarqes" target="_blank" class="author-box">
+                    <a href="https:www.linkedin.com/in/Ramarqes" target="_blank" class="author-box">
                         <img src="./assets/ramon.png" class="profile-photo" draggable="false"></img>
                     </a>
                 <div class="author-infor">
@@ -74,21 +144,21 @@
             <p class="curse-description">Este projeto tem como objetivo auxiliar todos aqueles que desejam ingressar no mundo da programação por meio da linguagem Kotlin. Espero poder proporcionar a todos o conhecimento dos conceitos fundamentais dessa linguagem de programação, de modo a impactar o maior número possível de vidas através de projetos criados por outras pessoas. Assim, construiremos uma humanidade repleta de conhecimento, sabedoria e esperança.<span class="plant">🌱</span><span class="developer">👨🏻‍💻</span></p>
         </div>
         <ul class="menu-curse-list" id="mapa">
-            <li><a href="#">sumario</a></li>
-            <li><a href="#inicio">inicio</a></li>
+            <li><a href="#historia">historia</a></li>
             <li><a href="#olamundo">olá mundo</a></li>
             <li><a href="#variaveis">variaveis</a></li>
         </ul>
         <ul class="menu-curse-list">
-            <li><a href="https://kotlinlang.org/" target="_blank">kotlin site</a></li>
-            <li><a href="https://resources.jetbrains.com/storage/products/kotlin/docs/kotlin_logos.zip?_gl=1*v9r5ra*_ga*MTM2NjAxMjk1Ny4xNzA3NTg4OTkx*_ga_9J976DJZ68*MTcwNzU4ODk5MS4xLjEuMTcwNzU5MTEyNi41LjAuMA..&_ga=2.67188372.463528049.1707588992-1366012957.1707588991" target="_blank">Kotlin Logo</a></li>
-            <li><a href="https://blog.jetbrains.com/kotlin/" target="_blank">The Kotlin Blog</a></li>
-            <li><a href="https://play.kotlinlang.org/?_gl=1*1tnyzey*_ga*MTM2NjAxMjk1Ny4xNzA3NTg4OTkx*_ga_9J976DJZ68*MTcwNzU4ODk5MS4xLjEuMTcwNzU4OTA2Ni41Mi4wLjA.&_ga=2.162132665.463528049.1707588992-1366012957.1707588991#eyJ2ZXJzaW9uIjoiMS45LjIyIiwicGxhdGZvcm0iOiJqYXZhIiwiYXJncyI6IiIsIm5vbmVNYXJrZXJzIjp0cnVlLCJ0aGVtZSI6ImlkZWEiLCJjb2RlIjoiLyoqXG4gKiBZb3UgY2FuIGVkaXQsIHJ1biwgYW5kIHNoYXJlIHRoaXMgY29kZS5cbiAqIHBsYXkua290bGlubGFuZy5vcmdcbiAqL1xuZnVuIG1haW4oKSB7XG4gICAgcHJpbnRsbihcIkhlbGxvLCB3b3JsZCEhIVwiKVxufSJ9" target="_blank">Kotlin Playground</a></li>
-            <li><a href="https://kotlinlang.org/docs/kotlin-brand-assets.html" target="_blank">Kotlin brand assets</a></li>
+            <li><a href="https:kotlinlang.org/" target="_blank">kotlin site</a></li>
+            <li><a href="https:resources.jetbrains.com/storage/products/kotlin/docs/kotlin_logos.zip?_gl=1*v9r5ra*_ga*MTM2NjAxMjk1Ny4xNzA3NTg4OTkx*_ga_9J976DJZ68*MTcwNzU4ODk5MS4xLjEuMTcwNzU5MTEyNi41LjAuMA..&_ga=2.67188372.463528049.1707588992-1366012957.1707588991" target="_blank">kotlin logo</a></li>
+            <li><a href="https:blog.jetbrains.com/kotlin/" target="_blank">the kotlin blog</a></li>
+            <li><a href="https:play.kotlinlang.org/?_gl=1*1tnyzey*_ga*MTM2NjAxMjk1Ny4xNzA3NTg4OTkx*_ga_9J976DJZ68*MTcwNzU4ODk5MS4xLjEuMTcwNzU4OTA2Ni41Mi4wLjA.&_ga=2.162132665.463528049.1707588992-1366012957.1707588991#eyJ2ZXJzaW9uIjoiMS45LjIyIiwicGxhdGZvcm0iOiJqYXZhIiwiYXJncyI6IiIsIm5vbmVNYXJrZXJzIjp0cnVlLCJ0aGVtZSI6ImlkZWEiLCJjb2RlIjoiLyoqXG4gKiBZb3UgY2FuIGVkaXQsIHJ1biwgYW5kIHNoYXJlIHRoaXMgY29kZS5cbiAqIHBsYXkua290bGlubGFuZy5vcmdcbiAqL1xuZnVuIG1haW4oKSB7XG4gICAgcHJpbnRsbihcIkhlbGxvLCB3b3JsZCEhIVwiKVxufSJ9" target="_blank">kotlin playground</a></li>
+            <li><a href="https:kotlinlang.org/docs/kotlin-brand-assets.html" target="_blank">Kotlin brand assets</a></li>
+            <li><a href="https:resources.jetbrains.com/storage/products/kotlin/docs/kotlin_mascot_2.zip?_gl=1*n5h6gu*_ga*NDE5MTMzMjM2LjE3MDgxNDAwMzI.*_ga_9J976DJZ68*MTcwODE0MDAzMi4xLjEuMTcwODE0MDE0OS41Mi4wLjA.&_ga=2.55167659.1201682532.1708140033-419133236.1708140032" target="_blank">kotlin mascot</a></li>
         </ul>
     </div>
     <div class="infor-page">
-        <p >Este site é Open Source e é construído com Amor <span class="heart">❤️</span> <a class="github" href="https://github.com/ramonmarqueslima/guia_kotlin_para_iniciantes" target="_blank">Código-fonte disponível no GitHub</a> <span class="box">📦</span> Criado por Ramon Marques em 2024 <span class="wink">😉</span> <a class="linkedin" target="_blank" href="https://www.linkedin.com/in/Ramarqes">Linkedin.com/in/Ramarqes</a></p>
+        <p >Este site é Open Source e é construído com Amor <span class="heart">❤️</span> <a class="github" href="https:github.com/ramonmarqueslima/guia_kotlin_para_iniciantes" target="_blank">Código-fonte disponível no GitHub</a> <span class="box">📦</span> Criado por Ramon Marques em 2024 <span class="wink">😉</span> <a class="linkedin" target="_blank" href="https:www.linkedin.com/in/Ramarqes">Linkedin.com/in/Ramarqes</a></p>
     </div>
 </div>
 </html>

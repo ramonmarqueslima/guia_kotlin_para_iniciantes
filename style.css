@@ -1,3 +1,4 @@
+/* Definindo algumas propriodades do site como espaçamento e comportamento */
 *{
     margin: 0px;
     padding: 0px;
@@ -6,68 +7,108 @@ html{
     scroll-behavior: smooth;
 }
 body{
-    font-family: "Open Sans", sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 20px;;
     color: #ffffff;
-    background-color: #332a45;
+    background-color: #2f263f;
 }
-.title-page-curse{
-    margin: 50px;
+
+/* Definindo o titulo da pagina */
+.header-page{
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    background-image: linear-gradient(20deg, #7F52FF, #C811E2, #E54857);
 }
 .title-page{
+    font-size: 50px;  
+    text-shadow: 0px 0px 30px #ffffff;
+    text-transform: capitalize;
+    margin: 30px;
+    display: flex;
+    justify-content: center;
+    justify-items: center;
+    user-select: none;
+}
+
+/* Definindo a area em volta de cada modulo */
+.area-module{
+    margin: 50px;
+}
+
+/* Definindo o titulo do modulo */
+.section-header{
+    height: 100px;
     display: flex;
     flex-direction: row;
-    justify-content: center;
-    font-size: 50px;
-    text-transform: capitalize;
-}
-.description-page{
-    font-size: 25px;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    text-transform: capitalize;
-    font-weight: 400;
-}
-.sumary-curse{
-    text-transform: capitalize;
-    display: flex;
-    flex-direction: row;
-    justify-content: center;
-    align-items: start;
-    margin: 10px;
-    padding: 25px;
-}
-.sumary-section{
-    padding: 25px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
     align-items: center;
 }
-.sumary-list{
-    margin: 20px;
-    padding-left: 50px;
-    padding-right: 50px;
-}
-.sumary-list a{
-    text-decoration: transparent;
-    color: #ffffff;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    font-weight: 100;
-    border-radius: 4px;
-    margin: 5px;
-    display: block;
-    width: auto;
-    padding: 5px;
-}
-.sumary-list a:hover{
-    color: #ffffff;
-    cursor: pointer;
-    background-image: linear-gradient(60deg, #7442ff, #E54857);
-
-}
 .section-title{
+    margin-bottom: 5px;
+    text-align: center;
+    font-size: 30px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-transform: uppercase;
+}
+.side-logo{
+    width: 30px;
+    margin-right: 20px;
+    user-select: none;
+    -webkit-user-drag: none;
+    -moz-user-select: none;
+    -webkit-user-modify: read-only;
+}
+
+/* Definindo o conteudo do curso */
+.module-content{
+    margin-left: 50px;
+    margin-right: 50px;
+}
+.content-curse-title{
+    font-size: 25px;
+    text-transform: capitalize;
+    margin-bottom: 30px;
+}
+.content-curse{
+    font-size: 20px;
+    font-weight: 100;
+    text-align: justify;
+    margin-bottom: 30px;
+}
+.font-section{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+}
+.fonte-reference{
+    text-transform: capitalize;
+    font-size: 18px;
+    font-weight: 100;
+}
+.fonte-name{
+    transition: ease-in-out 0.3s;
+    text-transform: capitalize;
+    font-size: 18px;
+    margin-left: 5px;
+    color: #a077ff;
+    text-decoration: none;
+}
+.fonte-name:hover{
+    text-shadow: 0px 0px 30px #C811E2;
+}
+
+
+
+
+
+
+
+
+
+
+
+/* .section-header{
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -77,16 +118,17 @@ body{
     -webkit-user-drag: none;
     -moz-user-select: none;
     -webkit-user-modify: read-only;
-}
+} */
 
-.mini-logo{
+/* .mini-logo{
     width: 25px;
     user-select: none;
     -webkit-user-drag: none;
     -moz-user-select: none;
     -webkit-user-modify: read-only;
-}
-.kotlin-logo-name{
+} */
+.module-title{
+
     margin-left: 15px;
     text-transform: capitalize;
     margin-bottom: 3px;
@@ -177,9 +219,9 @@ strong{
     flex-direction: row;
     justify-content: space-evenly;
     align-items: center;
-    border-top-width: 20px;
+    border-top-width: 15px;
     border-top-style: solid;
-    border-image: linear-gradient(64deg, #7F52FF, #E54857) 1;
+    border-image: linear-gradient(20deg, #7F52FF, #C811E2, #E54857) 1;
 }
 .kotlin-curse-description{
     display: flex;
@@ -220,13 +262,13 @@ strong{
 }
 .infor-page{
     width: auto;
-    height: 50px;
+    height: 40px;
     font-size: 14px;
     display: flex;
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    background-color: #0e1220;
+    background-color: #1B1B1B;
 }
 .developer{
     transition: all 0.5s;
