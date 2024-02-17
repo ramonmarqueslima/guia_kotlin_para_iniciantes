@@ -44,12 +44,13 @@ body{
     flex-direction: row;
     align-items: center;
 }
+/* Titulo do modulo do curso */
 .section-title{
     margin-bottom: 5px;
     text-align: center;
     font-size: 30px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    text-transform: uppercase;
+    text-transform: capitalize;
 }
 .side-logo{
     width: 30px;
@@ -76,20 +77,23 @@ body{
     text-align: justify;
     margin-bottom: 30px;
 }
+/* Definido estilização das fontes de informações */
 .font-section{
     display: flex;
     flex-direction: row;
     align-items: center;
-}
-.fonte-reference{
-    text-transform: capitalize;
     font-size: 18px;
     font-weight: 100;
-}
-.fonte-name{
-    transition: ease-in-out 0.3s;
     text-transform: capitalize;
-    font-size: 18px;
+}
+/* Nome da fonte de estudo */
+.fonte-reference{
+
+}
+/* Link da fonte de estudo*/
+.fonte-name{
+
+    transition: ease-in-out 0.3s;
     margin-left: 5px;
     color: #a077ff;
     text-decoration: none;
