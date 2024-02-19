@@ -63,6 +63,15 @@ body{
     height: 200px;
     border-radius: 7px;
     color: #1B1B1B;
+    -webkit-user-drag: none;
+    user-select: none;
+    -moz-user-select: none;
+    -webkit-user-modify: read-only;
+    transition: ease-in-out 0.3s;
+}
+.single-card:hover{
+    box-shadow: 0 0px 60px#a62fef;
+    cursor: pointer;
 }
 .image-and-time{
     display: flex;
@@ -114,7 +123,6 @@ body{
 
 }
 .card-title{
-    text-transform: capitalize;
     color: #4d4855;
     font-size: 20px;
 }
