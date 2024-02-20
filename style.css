@@ -2,7 +2,6 @@
 *{
     margin: 0px;
     padding: 0px;
-    animation-name: fadeInOut;
 }
 html{
     scroll-behavior: smooth;
@@ -39,8 +38,7 @@ body{
 }
 /* Definindo o menu de modulos do curso */
 @keyframes fadeInOut {
-    0% {opacity: 0.1;}
-    50% {opacity: 0;}
+    0% {opacity: 0;}
     100% {opacity: 1;}
 }
 .cards-sections{
@@ -56,7 +54,7 @@ body{
     user-select: none;
     -moz-user-select: none;
     animation-name: fadeInOut;
-    animation-duration: 0.9s;
+    animation-duration: 0.7s;
     animation-timing-function: ease;
     animation-fill-mode: forwards;
 }
@@ -124,15 +122,27 @@ body{
     background-color: #ffffff2d;
     padding: 4px 10px;
     border-radius: 5px;
+    animation-name: fadeInOut;
+    animation-duration: 0.7s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
 }
 .mard-reading{
     background-image: linear-gradient(20deg, #7F52FF, #C811E2, #E54857);
     box-shadow: 0px 0px 10px #C811E2;
+    animation-name: fadeIn;
+    animation-duration: 0.7s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
 }
 .marked-read{
     background-color: #ffffff;
-    box-shadow: 0px 0
+    box-shadow: 0px 0px 10px #ffffff;
     px 10px #ffffff;
+    animation-name: fadeInOut;
+    animation-duration: 0.7s;
+    animation-timing-function: ease;
+    animation-fill-mode: forwards;
 }
 /* Definindo as propridades da imagem dos Cards. */
 .card-image{
@@ -192,7 +202,7 @@ body{
 }
 /* Ticulo do Card */
 .card-title{
-    color: #4d4855;
+    color: #272034;
     font-size: 20px;
     font-family: "Manrope", sans-serif;
     font-weight: 800;
@@ -200,14 +210,15 @@ body{
 }
 /* Descrição do Card */
 .card-description{
-    color: #3e2d5c;
+    color: #272034;
     font-size: 16px;
 }
 
 
 /* Definindo a area em volta de cada modulo */
 .area-module{
-    animation-duration: 0.9s;
+    animation-name: fadeInOut;
+    animation-duration: 0.7s;
     animation-timing-function: ease;
     animation-fill-mode: forwards;
     margin: 50px;
