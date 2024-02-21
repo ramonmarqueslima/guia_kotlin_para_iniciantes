@@ -247,8 +247,8 @@ body{
 }
 .left-introduction-title{
     font-family: "Manrope", sans-serif;
-    font-size: 60px;
-    background-image: linear-gradient(-20deg, #8a48fb, #ffffff);
+    font-size: 80px;
+    background-image: linear-gradient(-150deg, #7F52FF, #C811E2, #E54857);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -259,18 +259,23 @@ body{
 }
 
 .left-introduction-impact-frase{
-    font-size: 40px;
+    font-size: 50px;
     font-weight: 100;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
 .left-introduction-description{
     font-size: 25px;
     margin-top: 20px;
-    font-weight: 100;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
 }
+.right-introduction{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+}
 .img-right-introduction{
-    border-radius: 15px;
+    border-radius: 20px;
     z-index: 1;
 }
 .img-right-introduction-blur{
