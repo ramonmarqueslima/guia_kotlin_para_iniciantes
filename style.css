@@ -7,11 +7,12 @@ html{
     scroll-behavior: smooth;
 }
 body{
-    font-family: "Manrope", sans-serif;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: 20px;;
     color: #ffffff;
     background-color: #272034;
 }
+
 /* Cor de fundo ao selecionar um texto */
 ::selection{
     color: #ffffff;
@@ -20,21 +21,38 @@ body{
 
 /* Definindo o titulo da pagina */
 .header-page{
+    padding: 50px;
     display: flex;
-    justify-content: center;
     justify-items: center;
-    background-image: linear-gradient(20deg, #7F52FF, #C811E2, #E54857);
+    align-items: center;
+    flex-direction: row;
+}
+.link-index{
+    gap: 20px;
+    display: flex;
+    justify-items: center;
+    align-items: center;
+    flex-direction: row;
+    color: #ffffff;
+    text-decoration: none;
+}
+.mini-logo-title-page{
+    animation-name: fadeInOut;
+    animation-duration: 0.7s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    width: 30px;
+    user-select: none;
+    -webkit-user-drag: none;
+    -moz-user-select: none;
+    -webkit-user-modify: read-only;
 }
 /* Titulo inicial do Site "Kotlin para Iniciantes" */
 .title-page{
-    font-size: 30px;  
-    text-shadow: 0px 0px 30px #ffffff;
+    font-weight: 100;
+    font-size: 25px;  
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    margin: 20px;
-    display: flex;
-    justify-content: center;
-    justify-items: center;
-    user-select: none;
+    transition: all 0.3s;
 }
 /* Definindo o menu de modulos do curso */
 @keyframes fadeInOut {
@@ -42,6 +60,7 @@ body{
     100% {opacity: 1;}
 }
 .cards-sections{
+    font-family: "Manrope", sans-serif;
     margin: 100px 50px;
     display: flex;
     flex-direction: column;
@@ -55,7 +74,7 @@ body{
     -moz-user-select: none;
     animation-name: fadeInOut;
     animation-duration: 0.7s;
-    animation-timing-function: ease;
+    animation-timing-function: ease-in-out;
     animation-fill-mode: forwards;
 }
 /* Linha de cards */
@@ -66,7 +85,6 @@ body{
     justify-content: center;
     align-items: center;
     text-decoration: none;
-    flex-wrap: wrap;
     gap: 50px;
     -webkit-user-drag: none;
     -webkit-user-modify: read-only;
@@ -124,7 +142,7 @@ body{
     border-radius: 5px;
     animation-name: fadeInOut;
     animation-duration: 0.7s;
-    animation-timing-function: ease;
+    animation-timing-function: ease-in-out;
     animation-fill-mode: forwards;
 }
 .mard-reading{
@@ -132,16 +150,15 @@ body{
     box-shadow: 0px 0px 10px #C811E2;
     animation-name: fadeIn;
     animation-duration: 0.7s;
-    animation-timing-function: ease;
+    animation-timing-function: ease-in-out;
     animation-fill-mode: forwards;
 }
 .marked-read{
     background-color: #ffffff;
     box-shadow: 0px 0px 10px #ffffff;
-    px 10px #ffffff;
     animation-name: fadeInOut;
     animation-duration: 0.7s;
-    animation-timing-function: ease;
+    animation-timing-function: ease-in-out;
     animation-fill-mode: forwards;
 }
 /* Definindo as propridades da imagem dos Cards. */
@@ -214,12 +231,91 @@ body{
     font-size: 16px;
 }
 
+/* Definindo a pagina de Apresentação */
+.introducing-page{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-between;
+    margin: 50px;
+}
+.left-introduction{
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    margin-right: 40px;
+}
+.left-introduction-title{
+    font-family: "Manrope", sans-serif;
+    font-size: 60px;
+    background-image: linear-gradient(-20deg, #8a48fb, #ffffff);
+    background-clip: text;
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: transparent;
+}
+.left-introduction-title::selection{
+    -webkit-background-clip: text;
+    -webkit-text-fill-color: #ffffff;
+}
+
+.left-introduction-impact-frase{
+    font-size: 40px;
+    font-weight: 100;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.left-introduction-description{
+    font-size: 25px;
+    margin-top: 20px;
+    font-weight: 100;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+.img-right-introduction{
+    border-radius: 15px;
+    z-index: 1;
+}
+.img-right-introduction-blur{
+    z-index: -1;
+    position: absolute;
+    filter: blur(30px);
+    margin-top: 10px;
+    right: 100px;
+}
+/* Deifindo as propriedades da area "Por que devo aprender Kotlin?" */
+.why-study-kotlin{
+    display: flex;
+    flex-direction: row;
+    gap: 20px; 
+    padding: 50px;
+}
+.why-title{
+    margin-left: 50px;
+    font-size: 30px;
+    font-family: "Manrope", sans-serif;
+}
+.why-explanation{
+    padding: 20px;
+    border-radius: 10px;
+    border: 1px solid #4a405e;
+    width: 270px;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    font-weight: 100;
+    background-color: #332a46;
+}
+.why-explanation:hover{
+    color: #ffffff;
+    background-color: #8a48fb;
+}
+.why-explanation-strong{
+    font-weight: 700;
+    color: #ffffff;
+}
 
 /* Definindo a area em volta de cada modulo */
 .area-module{
     animation-name: fadeInOut;
     animation-duration: 0.7s;
-    animation-timing-function: ease;
+    animation-timing-function: ease-in-out;
     animation-fill-mode: forwards;
     margin: 50px;
 }
@@ -439,7 +535,6 @@ strong{
 .menu-curse-list a{
     text-decoration: none;
     color: #ffffff;
-    text-transform: capitalize;
     font-weight: 100;
     transition:  all 0.5s;
 }
@@ -510,7 +605,6 @@ strong{
     filter: drop-shadow(0px 0px 5px #0096ff);
     color: #0096ff;
 }
-
 a:hover{
-    color: #ca74ff;
+    color: #9c4fff;
 }
