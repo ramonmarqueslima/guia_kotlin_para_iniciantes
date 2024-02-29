@@ -54,6 +54,64 @@ body{
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     transition: all 0.3s;
 }
+
+/* Deficindo a barra lateral do guia de conteudos */
+.side-content-guide{
+    background-color: #272034;
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    justify-content: center;
+    float: right;
+    position: -webkit-sticky; 
+    position: sticky;
+    top: 50px;
+    right: 50px;
+    z-index: 5;
+    border-left: 1px solid #ffffff86;
+}
+.side-content-guide a{
+    text-decoration: none;
+    color: #ffffff;
+}
+.side-content-guide-logo-title{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+.side-logo-guide{
+    width: 30px;
+    user-select: none;
+    -webkit-user-drag: none;
+    -moz-user-select: none;
+    -webkit-user-modify: read-only;
+    margin-bottom: 10px;
+}
+
+.side-content-guide-links{
+    margin-left: -2px;
+}
+
+.title-side-content{
+    cursor: pointer;
+    transition: all 0.3s;
+    padding: 5px 20px;
+    border-left: 3px solid transparent;
+    font-weight: 600; 
+}
+.side-content{
+    cursor: pointer;
+    transition: all 0.3s;
+    padding: 5px 20px;
+    font-weight: 100;
+    border-left: 3px solid transparent;
+    }
+.title-side-content:hover, .side-content:hover{
+    color: #bf67ff;
+    border-left: 3px solid #bf67ff;
+}
+
+
 /* Definindo o menu de modulos do curso */
 @keyframes fadeInOut {
     0% {opacity: 0;}
@@ -131,7 +189,7 @@ body{
     justify-content: center;
 }
 /* Definindo propriadades da marcação de Leitura */
-.mark-read{
+.mark-read-transparent{
     width: 20px;
     position: absolute;
     margin-left: 328px;
@@ -145,7 +203,7 @@ body{
     animation-timing-function: ease-in-out;
     animation-fill-mode: forwards;
 }
-.mard-reading{
+.mark-reading-colored{
     background-image: linear-gradient(20deg, #7F52FF, #C811E2, #E54857);
     box-shadow: 0px 0px 10px #C811E2;
     animation-name: fadeIn;
@@ -153,7 +211,7 @@ body{
     animation-timing-function: ease-in-out;
     animation-fill-mode: forwards;
 }
-.marked-read{
+.mark-read-done{
     background-color: #ffffff;
     box-shadow: 0px 0px 10px #ffffff;
     animation-name: fadeInOut;
@@ -248,7 +306,7 @@ body{
 .left-introduction-title{
     font-family: "Manrope", sans-serif;
     font-size: 80px;
-    background-image: linear-gradient(-150deg, #7F52FF, #C811E2, #E54857);
+    background-image: linear-gradient(-20deg, #ff6c08, #f35796, #b864b9, #587bcf);
     background-clip: text;
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -318,11 +376,11 @@ body{
 
 /* Definindo a area em volta de cada modulo */
 .area-module{
+    margin: 50px;
     animation-name: fadeInOut;
     animation-duration: 0.7s;
     animation-timing-function: ease-in-out;
     animation-fill-mode: forwards;
-    margin: 50px;
 }
 
 /* Definindo o titulo do modulo */
@@ -338,7 +396,6 @@ body{
     text-align: center;
     font-size: 30px;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
-    text-transform: capitalize;
 }
 /* Logo kotlin ao lado no titulo do Modulo */
 .side-logo{
@@ -354,16 +411,18 @@ body{
 .module-content{
     margin-left: 50px;
     margin-right: 50px;
+    margin-bottom: 25px;
 }
 .content-curse-title{
+    font-weight: 600;
     font-size: 25px;
-    text-transform: capitalize;
     margin-bottom: 30px;
 }
 .content-curse{
     font-size: 18px;
     text-align: justify;
     margin-bottom: 30px;
+    margin-right: 300px;
 }
 /* Definido estilização das fontes de informações */
 .font-section{
@@ -452,6 +511,30 @@ strong{
     display: block;
 }
 
+.go-to-top-page{
+    animation-name: fadeInOut;
+    animation-duration: 0.7s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+    position: fixed;
+    bottom: 40px;
+    right: 0px;
+    z-index: 5;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 15px 0px 0px 15px;
+    background-color: #ffffff00;
+}
+.link-go-to-top-page{
+   margin-right: 5px;
+   padding: 15px 30px 10px 10px;
+}
+.go-to-top-page:hover{
+    background-color: #bf67ff;
+    opacity: 100%;
+}
 .footer-page{
     color: #ffffff;
     height: auto;
@@ -611,5 +694,5 @@ strong{
     color: #0096ff;
 }
 a:hover{
-    color: #9c4fff;
+    color: #bf67ff;
 }
